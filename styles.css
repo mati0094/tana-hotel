@@ -713,10 +713,11 @@ blockquote footer {
   background: rgba(239, 215, 161, 0.12);
 }
 
-.social-links a i {
+.social-links a svg {
   display: block;
-  font-size: 1.1rem;
-  line-height: 1;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 .social-logo {
