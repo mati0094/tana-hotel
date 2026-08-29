@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dining | Shimela Lodge</title>
+    <meta name="description" content="Discover fine dining and room service at Shimela Lodge in Bahir Dar." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shimela Lodge home">
+          <div class="brand-mark">S</div>
+          <div>
+            <span class="brand-name">Shimela</span>
+            <small>Lodge</small>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="dining.html">Dining</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="nav-cta" href="booking.html">Reserve Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Dining experience</p>
+          <h1>Authentic flavor, elevated with elegance.</h1>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container ordering-layout">
+          <div class="ordering-copy">
+            <p class="eyebrow dark">Chef-crafted</p>
+            <h2>Experience the taste of Bahir Dar and beyond.</h2>
+            <p>Enjoy a refined menu inspired by Ethiopian traditions, local ingredients, and contemporary culinary presentation.</p>
+          </div>
+
+          <div class="food-ordering">
+            <div class="menu-cards" id="menuCards">
+              <article class="food-card" data-name="Ethiopian Platter" data-price="1400">
+                <h3>Ethiopian Platter</h3>
+                <p>Signature assortment of local stews and freshly baked injera.</p>
+                <div class="food-meta">
+                  <span>ETB 1,400</span>
+                  <button class="mini-btn" type="button">Add</button>
+                </div>
+              </article>
+              <article class="food-card" data-name="Grilled Chicken" data-price="1100">
+                <h3>Grilled Chicken</h3>
+                <p>Served with roasted vegetables and saffron rice.</p>
+                <div class="food-meta">
+                  <span>ETB 1,100</span>
+                  <button class="mini-btn" type="button">Add</button>
+                </div>
+              </article>
+              <article class="food-card" data-name="Lake Tana Salmon" data-price="1500">
+                <h3>Lake Tana Salmon</h3>
+                <p>Freshly prepared with citrus and herb glaze.</p>
+                <div class="food-meta">
+                  <span>ETB 1,500</span>
+                  <button class="mini-btn" type="button">Add</button>
+                </div>
+              </article>
+              <article class="food-card" data-name="Café Latte" data-price="450">
+                <h3>Café Latte</h3>
+                <p>Handcrafted with rich local Ethiopian beans.</p>
+                <div class="food-meta">
+                  <span>ETB 450</span>
+                  <button class="mini-btn" type="button">Add</button>
+                </div>
+              </article>
+            </div>
+
+            <aside class="order-summary">
+              <h3>Your order</h3>
+              <ul id="orderList">
+                <li class="empty-state">No items selected yet.</li>
+              </ul>
+              <div class="order-total">
+                <span>Total</span>
+                <strong id="orderTotal">ETB 0</strong>
+              </div>
+              <button type="button" class="btn btn-primary full" id="checkoutOrder">Place Order</button>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark">S</div>
+            <div>
+              <span class="brand-name">Shimela</span>
+              <small>Lodge</small>
+            </div>
+          </div>
+          <p>Luxury stays and dining experiences in Bahir Dar, Ethiopia.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="tel:+251962805440">+251 96 280 5440</a></p>
+          <p><a href="mailto:hello@shimelalodge.com">hello@shimelalodge.com</a></p>
+        </div>
+        <div>
+          <h4>Location</h4>
+          <p>Bahir Dar, Ethiopia</p>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>© <span id="year"></span> Shimela Lodge. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | Shimela Lodge</title>
+    <meta name="description" content="Book a luxury stay at Shimela Lodge in Bahir Dar, Ethiopia." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Shimela Lodge home">
+          <div class="brand-mark">S</div>
+          <div>
+            <span class="brand-name">Shimela</span>
+            <small>Lodge</small>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="dining.html">Dining</a>
+          <a href="booking.html">Booking</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="nav-cta" href="booking.html">Reserve Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">Reservations</p>
+          <h1>Reserve your elevated Bahir Dar escape.</h1>
+        </div>
+      </section>
+
+      <section class="section-shell accent-bg">
+        <div class="container booking-shell">
+          <div class="booking-content">
+            <p class="eyebrow dark">Booking</p>
+            <h2>Your stay, perfectly planned.</h2>
+            <p>Choose your room, dates, and guest count to get a live estimate for your stay.</p>
+          </div>
+
+          <form class="booking-form" id="bookingForm">
+            <div class="field-row">
+              <label>
+                Check-in
+                <input type="date" id="checkin" required />
+              </label>
+              <label>
+                Check-out
+                <input type="date" id="checkout" required />
+              </label>
+            </div>
+            <div class="field-row">
+              <label>
+                Room type
+                <select id="roomType">
+                  <option value="7000">Lake View Deluxe</option>
+                  <option value="9750">Garden Suite</option>
+                  <option value="18000">Presidential Villa</option>
+                </select>
+              </label>
+              <label>
+                Guests
+                <select id="guests">
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                </select>
+              </label>
+            </div>
+            <div class="booking-summary">
+              <div>
+                <span>Estimated stay</span>
+                <strong id="stayTotal">ETB 0</strong>
+              </div>
+              <button type="submit" class="btn btn-primary full">Confirm Booking</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark">S</div>
+            <div>
+              <span class="brand-name">Shimela</span>
+              <small>Lodge</small>
+            </div>
+          </div>
+          <p>Luxury stays and dining experiences in Bahir Dar, Ethiopia.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="tel:+251962805440">+251 96 280 5440</a></p>
+          <p><a href="mailto:hello@shimelalodge.com">hello@shimelalodge.com</a></p>
+        </div>
+        <div>
+          <h4>Location</h4>
+          <p>Bahir Dar, Ethiopia</p>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>© <span id="year"></span> Shimela Lodge. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
