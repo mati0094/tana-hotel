@@ -1,15 +1,17 @@
 :root {
-  --bg: #0d0c09;
-  --panel: #17140f;
-  --panel-soft: #201b16;
-  --gold: #d2aa5c;
-  --gold-soft: #f0dca8;
-  --white: #f8f5ef;
+  --bg: #0a0d10;
+  --panel: #12191d;
+  --panel-soft: #1a2429;
+  --gold: #d5b46d;
+  --gold-soft: #f3dfab;
+  --sand: #b88b5e;
+  --terracotta: #a75c42;
+  --white: #f8f5f0;
   --muted: #d8d0c4;
-  --shadow: rgba(18, 11, 4, 0.32);
+  --shadow: rgba(8, 10, 12, 0.42);
   --border: rgba(255, 255, 255, 0.09);
   --success: #cfe5a8;
-  --deep: #110f0d;
+  --deep: #090b0d;
 }
 
 * {
@@ -120,12 +122,13 @@ p {
   height: 46px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  background: linear-gradient(135deg, var(--gold-soft), var(--sand));
   color: var(--bg);
   border-radius: 12px;
   font-weight: 800;
   font-family: 'Cormorant Garamond', serif;
   font-size: 2rem;
+  box-shadow: 0 10px 25px rgba(213, 180, 109, 0.28);
 }
 
 .brand-name {
@@ -186,10 +189,10 @@ p {
   align-items: center;
   justify-content: center;
   padding: 0.9rem 1.5rem;
-  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  background: linear-gradient(135deg, var(--gold-soft), var(--sand));
   color: #1d1711;
   font-weight: 700;
-  box-shadow: 0 15px 30px rgba(210, 170, 92, 0.28);
+  box-shadow: 0 15px 30px rgba(213, 180, 109, 0.3);
 }
 
 .btn-secondary {
@@ -218,12 +221,12 @@ p {
 }
 
 .home-hero {
-  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+  background-image: linear-gradient(120deg, rgba(8, 10, 12, 0.78), rgba(8, 10, 12, 0.28)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
 }
 
 .page-hero {
   min-height: 440px;
-  background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80');
+  background-image: linear-gradient(120deg, rgba(8, 10, 12, 0.7), rgba(8, 10, 12, 0.25)), url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero-overlay {
