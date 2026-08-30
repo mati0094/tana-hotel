@@ -1,17 +1,17 @@
 :root {
-  --bg: #0a0d10;
-  --panel: #12191d;
-  --panel-soft: #1a2429;
-  --gold: #d5b46d;
-  --gold-soft: #f3dfab;
-  --sand: #b88b5e;
-  --terracotta: #a75c42;
-  --white: #f8f5f0;
-  --muted: #d8d0c4;
-  --shadow: rgba(8, 10, 12, 0.42);
-  --border: rgba(255, 255, 255, 0.09);
+  --bg: #0b0b0d;
+  --panel: #121517;
+  --panel-soft: #1b2125;
+  --gold: #d7b66a;
+  --gold-soft: #f1dfb0;
+  --sand: #ba8b5a;
+  --terracotta: #9d5b42;
+  --white: #f7f3ee;
+  --muted: #d6cab5;
+  --shadow: rgba(6, 9, 12, 0.52);
+  --border: rgba(255, 255, 255, 0.1);
   --success: #cfe5a8;
-  --deep: #090b0d;
+  --deep: #07090b;
 }
 
 * {
@@ -99,8 +99,9 @@ p {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(14px);
-  background: rgba(10, 9, 8, 0.75);
+  background: rgba(11, 11, 13, 0.8);
   border-bottom: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .nav-wrap {
@@ -221,12 +222,12 @@ p {
 }
 
 .home-hero {
-  background-image: linear-gradient(120deg, rgba(8, 10, 12, 0.78), rgba(8, 10, 12, 0.28)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+  background-image: linear-gradient(120deg, rgba(8, 10, 12, 0.82), rgba(8, 10, 12, 0.24)), url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80');
 }
 
 .page-hero {
   min-height: 440px;
-  background-image: linear-gradient(120deg, rgba(8, 10, 12, 0.7), rgba(8, 10, 12, 0.25)), url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80');
+  background-image: linear-gradient(120deg, rgba(8, 10, 12, 0.76), rgba(8, 10, 12, 0.24)), url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1600&q=80');
 }
 
 .hero-overlay {
@@ -308,6 +309,13 @@ p {
   border-radius: 26px;
   overflow: hidden;
   box-shadow: 0 18px 30px var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 36px rgba(17, 19, 23, 0.42);
+  border-color: rgba(213, 182, 106, 0.45);
 }
 
 .room-image {
@@ -317,15 +325,15 @@ p {
 }
 
 .room-one {
-  background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80');
+  background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80');
 }
 
 .room-two {
-  background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80');
+  background-image: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80');
 }
 
 .room-three {
-  background-image: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80');
+  background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=80');
 }
 
 .room-body {
